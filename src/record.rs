@@ -50,6 +50,10 @@ impl RecordHeader {
     pub fn flags(&self) -> u32 {
         self.flags
     }
+
+    pub fn form_id(&self) -> Option<NonZeroU32> {
+        self.form_id
+    }
 }
 
 #[derive(Clone, PartialEq, Eq, Debug, Hash, Default)]
