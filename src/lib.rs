@@ -27,8 +27,8 @@ mod form_id;
 mod game_id;
 mod group;
 mod plugin;
-mod record;
-mod record_id;
+pub mod record;
+pub mod record_id;
 mod subrecord;
 
 fn le_slice_to_u32(input: &[u8]) -> u32 {
